@@ -13,12 +13,12 @@ public class Parser {
 
     public static void main(String[] args) {
         System.out.println("Escolha o diretorio onde está localizado o arquivo: ");
-        @SuppressWarnings("resource")
+
         final String path = new Scanner(System.in).next();
 
-        List<String> lines;
+        List<String> linhas;
         try {
-            lines = Reader.leLines(path);
+            linhas = Reader.leLines(path);
         } catch (ReadLogException | NotFoundLogException e) {
             System.out.println(e.getMessage());
             return;
