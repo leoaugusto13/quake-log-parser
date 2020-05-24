@@ -5,35 +5,35 @@ import java.util.List;
 
 public class TempGame {
 
-    private String nome;
+    private String name;
 
-    private List<String> linhas;
+    private List<String> lines;
 
     public TempGame() {
-        this.linhas = new ArrayList<>();
+        this.lines = new ArrayList<>();
     }
 
-    public String getNome() {
-        return nome;
-    }
-
-
-    public void setName(String nome) {
-        this.nome = nome;
-    }
-
-    public List<String> getLinhas() {
-        return linhas;
+  
+    public String getName() {
+        return name;
     }
 
 
-    public void setLinhas(List<String> linhas) {
-        this.linhas = linhas;
+    public void setName(String name) {
+        this.name = name;
     }
 
 
-    public void addLinhas(String linhas) {
-        this.linhas.add(linhas);
+    public List<String> getLines() {
+        return lines;
+    }
+
+     public void setLines(List<String> lines) {
+        this.lines = lines;
+    }
+
+    public void addLine(String line) {
+        this.lines.add(line);
     }
 
 
