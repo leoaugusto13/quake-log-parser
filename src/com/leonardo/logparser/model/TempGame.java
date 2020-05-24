@@ -32,7 +32,7 @@ public class TempGame {
     }
 
 
-    public void addLinha(String linhas) {
+    public void addLinhas(String linhas) {
         this.linhas.add(linhas);
     }
 
