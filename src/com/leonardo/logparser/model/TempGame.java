@@ -13,7 +13,6 @@ public class TempGame {
         this.lines = new ArrayList<>();
     }
 
-  
     public String getName() {
         return name;
     }
