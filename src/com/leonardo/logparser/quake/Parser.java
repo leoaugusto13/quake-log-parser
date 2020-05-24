@@ -4,10 +4,10 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Scanner;
 
-import br.com.leonardo.logparser.exception.NotFoundLogException;
-import br.com.leonardo.logparser.exception.ReadLogException;
-import br.com.leonardo.logparser.file.Reader;
-import br.com.leonardos.logparser.model.Game;
+import com.leonardo.logparser.exception.NotFoundLogException;
+import com.leonardo.logparser.exception.ReadLogException;
+import com.leonardo.logparser.file.Reader;
+import com.leonardo.logparser.model.Game;
 
 
 public class Parser {
