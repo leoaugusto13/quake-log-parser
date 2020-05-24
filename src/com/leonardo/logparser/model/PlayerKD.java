@@ -5,74 +5,79 @@ import java.util.Map;
 
 public class PlayerKD {
 
+    private Integer validKills;
 
-    private Integer mortesValidas;
+    private Integer countKill;
 
-    private Integer contadorMatar;
+    private Integer countDeath;
 
-    private Integer contadorMortes;
-
-    private final Map<DeathType, Integer> contadorTipoMortes;
+    private final Map<DeathType, Integer> countDeathType;
 
     public PlayerKD() {
-        this.contadorMatar = 0;
-        this.contadorMortes = 0;
-        this.setMortesValidas(0);
-        this.contadorTipoMortes = new HashMap<>();
+        this.countKill = 0;
+        this.countDeath = 0;
+        this.setValidKills(0);
+        this.countDeathType = new HashMap<>();
     }
 
-    public Integer getContadorMortes() {
-        return contadorMortes;
+    public Integer getCountDeath() {
+        return countDeath;
     }
 
-    public void setContadorMortes(Integer contadorMortes) {
-        this.contadorMortes = contadorMortes;
+    public void setCountDeath(Integer countDeath) {
+        this.countDeath = countDeath;
     }
 
-    public Integer getContadorMatar() {
-        return contadorMatar;
+    public Integer getCountKill() {
+        return countKill;
     }
 
-    public void setContadorMatar(Integer contadorMatar) {
-        this.contadorMatar = contadorMatar;
+    public void setCountKill(Integer countKill) {
+        this.countKill = countKill;
     }
 
-    public void adicionarMatarValidas() {
-        this.mortesValidas++;
+    public void addValidKill() {
+        this.validKills++;
     }
 
-    public void adicionarMatar() {
-        this.contadorMatar++;
+    public void addKill() {
+        this.countKill++;
     }
 
-    public void adicionarMortes() {
-        this.contadorMortes++;
+    public void addDeath() {
+        this.countDeath++;
     }
 
-    public void punicao() {
-        this.contadorMatar--;
+    public void punish() {
+        this.countKill--;
     }
 
 
-    public Map<DeathType, Integer> getContadorTipoMortes() {
-        return contadorTipoMortes;
+    public Map<DeathType, Integer> getCountDeathType() {
+        return countDeathType;
     }
 
-    public void adicionarTiposMorte(final DeathType tipoMorte) {
-        if (!this.contadorTipoMortes.containsKey(tipoMorte)) {
-            this.contadorTipoMortes.put(tipoMorte, 0);
+
+    public void addDeathType(final DeathType deathType) {
+        if (!this.countDeathType.containsKey(deathType)) {
+            this.countDeathType.put(deathType, 0);
         }
 
-        final Integer previousValue = this.contadorTipoMortes.get(tipoMorte);
-        this.contadorTipoMortes.put(tipoMorte, previousValue + 1);
+        final Integer previousValue = this.countDeathType.get(deathType);
+        this.countDeathType.put(deathType, previousValue + 1);
     }
 
-    public Integer getMortesValidas() {
-        return mortesValidas;
+
+    public Integer getValidKills() {
+        return validKills;
     }
 
-    public void setMortesValidas(Integer mortesValidas) {
-        this.mortesValidas = mortesValidas;
+
+    public void setValidKills(Integer validKills) {
+        this.validKills = validKills;
     }
 
 }
+
+
+
