@@ -18,7 +18,6 @@ public class Parser {
         @SuppressWarnings("resource")
         final String path = new Scanner(System.in).next();
 
-        // Read all lines from Quake Log
         List<String> lines;
         try {
             lines = Reader.readLines(path);
@@ -36,4 +35,4 @@ public class Parser {
 
 }
 
-}
+
